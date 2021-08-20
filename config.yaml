@@ -1,0 +1,95 @@
+baseURL: 'http://example.org/'
+languageCode: en-us
+title: Falek Miah Blog
+description: Falek Miah Personal Blog
+author: Falek Miah
+theme: somrat
+
+paginate: '6'
+summaryLength: '10'
+# googleAnalytics: '' 
+# disableLanguages: []
+# disqusShortname: ''
+
+############################## outputs ###############################
+outputs:
+  home:
+    - HTML
+    
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+############################## plugins ###############################
+params:
+  plugins:
+    css:
+      - link: plugins/bootstrap/bootstrap.min.css
+      - link: >-
+          https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap
+      - link: >-
+          https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css
+      - link: plugins/hover/hover.css
+      - link: plugins/magnific-popup/magnific-popup.css
+      - link: plugins/owl-carousel/owl.carousel.min.css
+      - link: plugins/owl-carousel/owl.theme.default.min.css
+      - link: plugins/text-animation/text-animation.css
+    js:
+      - link: plugins/jQuery/jquery.min.js
+      - link: plugins/bootstrap/bootstrap.min.js
+      - link: plugins/wow.min.js
+      - link: plugins/text-animation/text-animation.js
+      - link: plugins/jquery.waypoints.min.js
+      - link: plugins/shuffle/shuffle.min.js
+      - link: plugins/magnific-popup/jquery.magnific-popup.min.js
+      - link: plugins/owl-carousel/owl.carousel.min.js
+  
+  
+  ############################## default parameters ##############################
+  logo_light: images/logo-falekmiah-light.png
+  logo_dark: images/logo-falekmiah-dark.png
+  logo_width: 150px
+  favicon: images/logo-falekmiah-light.png
+  
+  preloader:
+    enable: true
+    preloader: images/preloader.gif
+
+############################## social site ##############################  
+  social:
+      - icon: fab fa-twitter
+        link: 'https://twitter.com/FalekMiah'
+      - icon: fab fa-linkedin
+        link: 'https://www.linkedin.com/in/falekmiah/'
+      - icon: fab fa-github
+        link: 'https://github.com/FalekMiah01'
+      # - icon: fab fa-envelope-square
+      #   link: 'mailto:falekmiah@hotmail.co.uk'
+
+
+############################## language ##############################
+Languages:
+  en:
+    languageName: En
+    languageCode: en-us
+    contentDir: content/english
+    weight: 1
+    home: Home
+    copyright: Copyright Falek Miah &copy; 2021
+
+    ############################## navigation ##############################
+    menu:
+      main:
+        - name: Home
+          url: /
+          weight: 1
+
+        - name: About me
+          pre: '#'
+          url: about
+          weight: 2
+
+        - name: Blog
+          url: blog
+          weight: 3
