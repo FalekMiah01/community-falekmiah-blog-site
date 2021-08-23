@@ -79,7 +79,10 @@ custom_attributes: ""
 custom_css: ""
 ---
 
-Principal Consultant at [Advancing Analytics](https://www.advancinganalytics.co.uk/).<br><br>
-I am an enthusiastic and versatile Microsoft and Databricks (Spark) certified consultant with over 14 years’ technical experience.<br><br>
-Specialising in Business Intelligence, Cloud and Power Platform, with extensive experience on delivering end-to-end cloud solutions across a wide range of industries.<br><br>
+Principal Consultant at [Advancing Analytics](https://www.advancinganalytics.co.uk/).<br>
+
+I am an enthusiastic and versatile Microsoft and Databricks (Spark) certified consultant with over 14 years’ technical experience.<br>
+
+Specialising in Business Intelligence, Azure Cloud and Power Platform, with extensive experience on delivering end-to-end cloud solutions across a wide range of industries.<br>
+
 This site is to share knowledge and tips.
