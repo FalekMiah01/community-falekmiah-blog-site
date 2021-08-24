@@ -236,7 +236,7 @@ Plan: 7 to add, 0 to change, 0 to destroy.
 
 ### Terraform Apply
 
-he plan shows there will be seven resources created, which is correct. So let's execute it using the `Terraform Apply` command, you may be prompted to confirm the action if so then enter `yes`.
+The plan shows there will be seven resources created, which is correct. So let's execute it using the `Terraform Apply` command, you may be prompted to confirm the action if so then enter `yes`.
 
 ```powershell
 terraform apply -var-file="./terraform-dblabs.tfvars"

@@ -85,7 +85,7 @@ Languages:
           url: /
           weight: 1
 
-        - name: About me
+        - name: About Me
           pre: '#'
           url: about
           weight: 2
