@@ -6,6 +6,6 @@ type: blog
 image: images/portfolio/databricks-delta-spark-cache/adb-delta-spark-cache-portfolio.png
 categories: ["Azure", "Databricks"]
 draft: false
-url: "blog/adb-delta-spark-cache"
+url: "blog/databricks-delta-spark-cache"
 
 ---
