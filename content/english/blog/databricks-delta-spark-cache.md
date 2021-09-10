@@ -152,6 +152,7 @@ Example notebooks can be found on **[GitHub](https://github.com/FalekMiah01/Azur
 
 <br/><br/>
 
+
 ## **References**
 
 https://docs.microsoft.com/en-us/azure/databricks/delta/optimizations/delta-cache
