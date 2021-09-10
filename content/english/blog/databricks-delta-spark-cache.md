@@ -1,6 +1,6 @@
 ---
 title: "Databricks Delta Spark Cache"
-date: 2021-09-10T16:38:47+01:00
+date: 2021-08-14T00:00:00+01:00
 # description : "Databricks Delta Cache and Spark Cache"
 # type: blog
 image: /images/portfolio/databricks-delta-spark-cache/adb-delta-spark-cache-featured.png
@@ -39,7 +39,7 @@ Delta cache can be optimised further by using a **`Delta Cache Accelerated`** wo
 
 Delta cache does not need to explicitly call as it will automatically caches the data when it is first executed. However, it is useful to call the `CACHE SELECT` command in advance to get consistent query performance. 
 
-<!-- {{<img src="/images/portfolio/databricks-delta-spark-cache/adb-cache-worker-types.png" alt="adb-cache-worker-types" width="200" align="center">}} <br><br>
+{{<img src="/images/portfolio/databricks-delta-spark-cache/adb-cache-worker-types.png" alt="adb-cache-worker-types" width="200" align="center">}} <br><br>
 
 ## Caching Examples
 
@@ -159,4 +159,4 @@ Example notebooks can be found on **[GitHub](https://github.com/FalekMiah01/Azur
 
 https://docs.microsoft.com/en-us/azure/databricks/delta/optimizations/delta-cache
 
-https://databricks.com/blog/2018/01/09/databricks-cache-boosts-apache-spark-performance.html -->
+https://databricks.com/blog/2018/01/09/databricks-cache-boosts-apache-spark-performance.html
