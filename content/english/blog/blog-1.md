@@ -4,7 +4,7 @@ date: 2020-05-12T12:14:34+06:00
 image: "images/portfolio/databricks-delta-spark-cache/adb-delta-spark-cache-featured.png"
 tags: ["Terraform", "Databricks", "Azure"]
 description: "This is meta description."
-draft: false
+draft: true
 ---
 
 <!-- {{<img src="/images/banner.jpg" alt="image" width="500" align="center">}} <br><br>

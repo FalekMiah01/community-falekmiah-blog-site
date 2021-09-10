@@ -1,15 +1,13 @@
 ---
 title: "Databricks Delta Spark Cache"
-date: 2021-08-14T00:00:00+01:00
-# description : "Databricks Delta Cache and Spark Cache"
-# type: blog
+date: 2021-09-10T00:00:00+01:00
+description : "Databricks Delta Spark Cache"
+type: blog
 image: /images/portfolio/databricks-delta-spark-cache/adb-delta-spark-cache-featured.png
-# author: Falek Miah
-# tags: ["Azure", "Databricks"]
-
+author: Falek Miah
+tags: ["Azure", "Databricks"]
 draft: false
 ---
-
 
 As data sizes and demand increases as time goes on, you often see slowness on Databricks this can be due to number of factors from security, network transfers, read/write requests, and memory space.  
 
@@ -160,3 +158,4 @@ Example notebooks can be found on **[GitHub](https://github.com/FalekMiah01/Azur
 https://docs.microsoft.com/en-us/azure/databricks/delta/optimizations/delta-cache
 
 https://databricks.com/blog/2018/01/09/databricks-cache-boosts-apache-spark-performance.html
+
