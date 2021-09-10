@@ -1,6 +1,6 @@
 ---
 title: "Databricks Delta Spark Cache"
-date: 2021-08-14T00:00:00+01:00
+date: 2021-09-10T16:38:47+01:00
 description : "Databricks Delta Spark Cache"
 type: blog
 image: /images/portfolio/databricks-delta-spark-cache/adb-delta-spark-cache-featured.png
