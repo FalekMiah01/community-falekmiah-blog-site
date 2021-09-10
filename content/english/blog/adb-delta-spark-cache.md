@@ -3,7 +3,7 @@ title: "Databricks Delta and Spark Cache"
 date: 2021-09-10T16:38:47+01:00
 description : "Databricks Delta and Spark Cache"
 type: blog
-image: /images/portfolio/adb-delta-spark-cache/adb-delta-spark-cache-featured.png
+image: /images/portfolio/databricks-delta-spark-cache/adb-delta-spark-cache-featured.png
 author: Falek Miah
 tags: ["Azure", "Databricks"]
 draft: false
@@ -37,7 +37,7 @@ Delta cache can be optimised further by using a **`Delta Cache Accelerated`** wo
 
 Delta cache does not need to explicitly call as it will automatically caches the data when it is first executed. However, it is useful to call the `CACHE SELECT` command in advance to get consistent query performance. 
 
-{{<img src="/images/portfolio/adb-delta-spark-cache/adb-cache-worker-types.png" alt="adb-cache-worker-types" width="200" align="center">}} <br><br>
+{{<img src="/images/portfolio/databricks-delta-spark-cache/adb-cache-worker-types.png" alt="adb-cache-worker-types" width="200" align="center">}} <br><br>
 
 ## Caching Examples
 
@@ -61,7 +61,7 @@ First, let’s get a baseline view before caching any dataframe, so execute a `c
 Using the Spark UI Storage tab, you will see that nothing has been cached or read. <br>
 *Sometime there may be a small amount data read by the external filesystem but in this case there was none.*
 
-{{<img src="/images/portfolio/adb-delta-spark-cache/adb-cache-spark-storage-ui-pre.png" alt="adb-cache-spark-storage-ui-pre" width="700" align="center">}} <br><br>
+{{<img src="/images/portfolio/databricks-delta-spark-cache/adb-cache-spark-storage-ui-pre.png" alt="adb-cache-spark-storage-ui-pre" width="700" align="center">}} <br><br>
 
 Now, execute a `count` query against the Delta table inside a dataframe using `.cache()` and call an action so it executes the command. 
 
@@ -77,7 +77,7 @@ Now, execute a `count` query against the Delta table inside a dataframe using `.
 
 This time you will see in the Spark UI Storage tab, that it has forced the data behind the DataFrame to be persisted in its RDD form and cached in memory.  
 
-{{<img src="/images/portfolio/adb-delta-spark-cache/adb-cache-spark-storage-ui-post.png" alt="adb-cache-spark-storage-ui-post" width="700" align="center">}} <br><br>
+{{<img src="/images/portfolio/databricks-delta-spark-cache/adb-cache-spark-storage-ui-post.png" alt="adb-cache-spark-storage-ui-post" width="700" align="center">}} <br><br>
  
 ### Delta Cache Example
 
@@ -98,7 +98,7 @@ Once again, let’s get a baseline view before caching, so execute a `count` que
 Using the Spark UI Storage tab, you can see again that nothing has been cached or read. <br>
 *Sometime there may be a small amount data read by the external filesystem but in this case there was none.*
 
-{{<img src="/images/portfolio/adb-delta-spark-cache/adb-cache-delta-storage-ui-pre.png" alt="adb-cache-delta-storage-ui-pre" width="700" align="center">}} <br><br>
+{{<img src="/images/portfolio/databricks-delta-spark-cache/adb-cache-delta-storage-ui-pre.png" alt="adb-cache-delta-storage-ui-pre" width="700" align="center">}} <br><br>
 
 Now, cache the Delta table using the `CACHE SELECT` command and re-execute the `count` query against the Delta table. 
 
@@ -123,7 +123,7 @@ Now, cache the Delta table using the `CACHE SELECT` command and re-execute the `
 
 This time in the Spark UI Storage tab, you can see that the data has been cached on each node and the volume of data being read and written from IO cache.  
 
-{{<img src="/images/portfolio/adb-delta-spark-cache/adb-cache-delta-storage-ui-post.png" alt="adb-cache-delta-storage-ui-post" width="700" align="center">}} <br><br>
+{{<img src="/images/portfolio/databricks-delta-spark-cache/adb-cache-delta-storage-ui-post.png" alt="adb-cache-delta-storage-ui-post" width="700" align="center">}} <br><br>
  
 ## Execution Times
 
@@ -131,11 +131,11 @@ We can compare the execution timings using the Spark UI Jobs tab.
 
 The Spark cache jobs shows the `postCache` dataframe was executed much faster than the `preCache` dataframe.  
 
-{{<img src="/images/portfolio/adb-delta-spark-cache/adb-cache-spark-jobs-ui.png" alt="adb-cache-spark-jobs-ui" width="700" align="center">}} <br><br>
+{{<img src="/images/portfolio/databricks-delta-spark-cache/adb-cache-spark-jobs-ui.png" alt="adb-cache-spark-jobs-ui" width="700" align="center">}} <br><br>
 
 The Delta cache jobs shows once again that the `post` query was executed faster than `pre cached` query and faster than Spark cache too.  
 
-{{<img src="/images/portfolio/adb-delta-spark-cache/adb-cache-delta-jobs-ui.png" alt="adb-cache-delta-jobs-ui" width="700" align="center">}} <br><br>
+{{<img src="/images/portfolio/databricks-delta-spark-cache/adb-cache-delta-jobs-ui.png" alt="adb-cache-delta-jobs-ui" width="700" align="center">}} <br><br>
 
 ## Summary
 
