@@ -1,7 +1,7 @@
 ---
 title: "This Is A Simple Blog Post"
 date: 2020-05-12T12:14:34+06:00
-image: "images/blog/terraform-databricks-labs/featured-image.png"
+image: "images/portfolio/databricks-delta-spark-cache/adb-delta-spark-cache-featured.png"
 tags: ["Terraform", "Databricks", "Azure"]
 description: "This is meta description."
 draft: false
