@@ -10,4 +10,4 @@ draft: false
 
 ---
 
-## Blog Page: **[databricks-delta-spark-cache]([https://www.falekmiah.com/blog/databricks-delta-spark-cache/)**
+## Blog Page: **[databricks-delta-spark-cache]([../blog/databricks-delta-spark-cache/)**
