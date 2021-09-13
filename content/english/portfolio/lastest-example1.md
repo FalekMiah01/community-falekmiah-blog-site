@@ -4,7 +4,7 @@ date: 2021-09-10T16:38:47+01:00
 image: images/portfolio/databricks-delta-spark-cache/adb-delta-spark-cache-portfolio.png
 categories: ["Azure", "Databricks"]
 description: "Databricks Delta and Spark Cache"
-draft: false
+draft: true
 # url: "blog"
 
 project_info:
