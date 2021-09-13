@@ -7,8 +7,8 @@ image: images/portfolio/databricks-delta-spark-cache/adb-delta-spark-cache-portf
 categories: ["Azure", "Databricks"]
 draft: false
 # url: "blog/databricks-delta-spark-cache"
+url: "blog/terraform-databricks-labs"
 
 ---
 
-
-**[Read me](blog/databricks-delta-spark-cache)**
+## Blog Page: **[databricks-delta-spark-cache]([https://www.falekmiah.com/blog/databricks-delta-spark-cache/)**
