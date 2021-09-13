@@ -6,8 +6,8 @@ type: blog
 image: images/portfolio/databricks-delta-spark-cache/adb-delta-spark-cache-portfolio.png
 categories: ["Azure", "Databricks"]
 draft: false
-# url: "blog/databricks-delta-spark-cache"
-url: "blog/terraform-databricks-labs"
+url: "blog/databricks-delta-spark-cache/"
+# url: "blog/terraform-databricks-labs"
 
 ---
 
