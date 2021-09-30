@@ -1,0 +1,70 @@
+{{ define "main" }}
+
+<!-- checking blog -->
+{{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "categories") (eq .Section "tags") }}
+<style>{{.Params.custom_css | safeCSS}}</style>
+<section class="portfolio {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}}>
+  <div class="container">
+    <div class="row"> <!-- Changed - Added for Tags  -->
+      <div class="col-lg-9 mb-4 mb-lg-0"> <!-- Changed - Added for Tags  -->
+        <h1 class="wow fadeInUp text-center mb-5" data-wow-duration="1.5s">{{ .Title }}</h1>
+        <div class="row wow fadeInUp" data-wow-duration="1.5s">
+          {{ $paginator:= .Paginate .Data.Pages }}
+          {{ range $paginator.Pages }}
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card">
+              {{ if .Params.image }} <a class="card-img-wrapper" href="{{.Permalink}}"><img
+                  src="{{.Params.image | absURL }}" alt="{{.Title}}" class="card-img-top"></a> {{ end }}
+                  <small>{{ .PublishDate.Format "January 2, 2006" }}</small>
+              <div class="card-body">
+                <h4 class="mb-2"><a class="card-title" href="{{.Permalink}}">{{.Title}}</a></h4>
+                <p class="card-text">{{.Summary}}</p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+          <div class="col-12">
+            {{ template "_internal/pagination.html" . }}
+          </div>
+        </div>
+      </div>
+      <!-- Changed - Added Tags  -->
+      <div class="col-lg-3">
+        <div class="bg-white sticky-top wow fadeInUp" data-wow-duration="1.5s" style="top: 80px;">
+          <div class="widget">
+            <h3 class="widget-title">Tags</h3>
+            {{- if isset site.Taxonomies "tags" }}
+            {{- if not (eq (len site.Taxonomies.tags) 0) }}
+            <ul class="list-unstyled widget-list">
+              {{- range $name, $items := site.Taxonomies.tags }}
+              <li><a href="{{ `tags/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | humanize }}&nbsp;&nbsp;({{ len $items }})</a></li>
+              {{- end }}
+            </ul>
+            {{- end }}
+            {{- end }}
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<!-- regular page -->
+{{ else }}
+<style>{{.Params.custom_css | safeCSS}}</style>
+<section class="portfolio {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}}>
+  <div class="container wow fadeInUp" data-wow-duration="1.5s">
+    <h1 class="text-center mb-5">{{ .Title | markdownify }}</h1>
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="content">
+          {{.Content}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- /regular page -->
+
+{{ end }}

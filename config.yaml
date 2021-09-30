@@ -93,3 +93,7 @@ Languages:
         - name: Blog
           url: blog
           weight: 3
+
+        # - name: Latest Blogs
+        #   url: portfolio
+        #   weight: 4
