@@ -3,7 +3,7 @@ title: "Databricks Execution Plans"
 date: 2021-10-04T00:00:00+01:00
 description : "Databricks Execution Plans"
 type: blog
-image: /images/portfolio/databricks-execution-plans/adb-execution-plans-featured.png
+# image: /images/portfolio/databricks-execution-plans/adb-execution-plans-featured.png
 author: Falek Miah
 tags: ["Azure", "Databricks"]
 draft: false
@@ -20,7 +20,7 @@ Databricks uses Catalyst optimizer, which automatically discovers the most effic
 
 *Catalyst optimizer flow:*
 
-{{<img src="/images/portfolio/databricks-execution-plans/adb-plans-flow-catalyst-optimizer.png" alt="adb-plans-flow-catalyst-optimizer" width="800" align="center">}} <br><br>
+<!-- {{<img src="/images/portfolio/databricks-execution-plans/adb-plans-flow-catalyst-optimizer.png" alt="adb-plans-flow-catalyst-optimizer" width="800" align="center">}} <br><br> -->
 
 The execution process is as follows:
 
@@ -29,7 +29,7 @@ The execution process is as follows:
 - The Optimized Logical Plan is then converted into a Physical Plan
 - The Physical Plan is executed on the cluster
 
-{{<img src="/images/portfolio/databricks-execution-plans/adb-plans-flow-execution-process.png" alt="adb-plans-flow-execution-process" width="800" align="center">}} <br><br>
+<!-- {{<img src="/images/portfolio/databricks-execution-plans/adb-plans-flow-execution-process.png" alt="adb-plans-flow-execution-process" width="800" align="center">}} <br><br> -->
 
 ## **Execution Plans**
 
@@ -88,8 +88,8 @@ This has validated everything and built the first version of the logical plan wi
 
 It was unable to validate the `Join` relationship, so it has tagged the Join `Relation` operation as `UnresolvedRelation`. 
 
-<a  href="/images/portfolio/databricks-execution-plans/adb-plans-parsed-logical-plan.png" target="_blank">
-<img src="/images/portfolio/databricks-execution-plans/adb-plans-parsed-logical-plan.png" alt="adb-plans-parsed-logical-plan" width="800" align="center"></a> <br><br>
+<!-- <a  href="/images/portfolio/databricks-execution-plans/adb-plans-parsed-logical-plan.png" target="_blank">
+<img src="/images/portfolio/databricks-execution-plans/adb-plans-parsed-logical-plan.png" alt="adb-plans-parsed-logical-plan" width="800" align="center"></a> <br><br> -->
 
 The next section of the explain output is the **`Analyzed Logical Plan`**. 
 
