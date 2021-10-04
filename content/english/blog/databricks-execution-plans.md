@@ -1,6 +1,6 @@
 ---
 title: "Databricks Execution Plans"
-date: 2021-10-03T00:00:00+01:00
+date: 2021-10-04T00:00:00+01:00
 description : "Databricks Execution Plans"
 type: blog
 image: /images/portfolio/databricks-execution-plans/adb-execution-plans-featured.png
@@ -20,7 +20,7 @@ Databricks uses Catalyst optimizer, which automatically discovers the most effic
 
 *Catalyst optimizer flow:*
 
-{{<img src="/images/portfolio/databricks-execution-plans/adb-plans-flow-catalyst-optimizer.png" alt="adb-plans-flow-catalyst-optimizer" width="800" align="center">}} <br><br>
+<!-- {{<img src="/images/portfolio/databricks-execution-plans/adb-plans-flow-catalyst-optimizer.png" alt="adb-plans-flow-catalyst-optimizer" width="800" align="center">}} <br><br> -->
 
 The execution process is as follows:
 
@@ -29,7 +29,7 @@ The execution process is as follows:
 - The Optimized Logical Plan is then converted into a Physical Plan
 - The Physical Plan is executed on the cluster
 
-{{<img src="/images/portfolio/databricks-execution-plans/adb-plans-flow-execution-process.png" alt="adb-plans-flow-execution-process" width="800" align="center">}} <br><br>
+<!-- {{<img src="/images/portfolio/databricks-execution-plans/adb-plans-flow-execution-process.png" alt="adb-plans-flow-execution-process" width="800" align="center">}} <br><br> -->
 
 ## **Execution Plans**
 
@@ -88,17 +88,17 @@ This has validated everything and built the first version of the logical plan wi
 
 It was unable to validate the `Join` relationship, so it has tagged the Join `Relation` operation as `UnresolvedRelation`. 
 
-<a  href="/images/portfolio/databricks-execution-plans/adb-plans-parsed-logical-plan.png" target="_blank">
-<img src="/images/portfolio/databricks-execution-plans/adb-plans-parsed-logical-plan.png" alt="adb-plans-parsed-logical-plan" width="800" align="center"></a> <br><br>
+<!-- <a  href="/images/portfolio/databricks-execution-plans/adb-plans-parsed-logical-plan.png" target="_blank">
+<img src="/images/portfolio/databricks-execution-plans/adb-plans-parsed-logical-plan.png" alt="adb-plans-parsed-logical-plan" width="800" align="center"></a> <br><br> -->
 
 The next section of the explain output is the **`Analyzed Logical Plan`**. 
 
 This has used the `Catalog` to validate the table or column objects, so it has now resolved everything it was unable to in the first plan. 
 
 You can see that the Join `Relation` operation that was previously marked `UnresolvedRelation` is now resolved, it has returned a `SubqueryAlias` operations from the `spark_catalog` which has determined the `Join` relationship. 
-
+<!-- 
 <a  href="/images/portfolio/databricks-execution-plans/adb-plans-analyzed-logical-plan.png" target="_blank">
-<img src="/images/portfolio/databricks-execution-plans/adb-plans-analyzed-logical-plan.png" alt="adb-plans-analyzed-logical-plan" width="800" align="center"></a> <br><br>
+<img src="/images/portfolio/databricks-execution-plans/adb-plans-analyzed-logical-plan.png" alt="adb-plans-analyzed-logical-plan" width="800" align="center"></a> <br><br> -->
 
 The next section of the explain output is the **`Optimized Logical Plan`.** 
 
@@ -106,8 +106,8 @@ As the Logical Plan is now validated, it can optimize the plan based on the oper
 
 You can see the operations have been reordered, the `Filter` is now performed as part of the `Join` operation reducing the volume of data being processed by the join. 
 
-<a  href="/images/portfolio/databricks-execution-plans/adb-plans-optimized-logical-plan.png" target="_blank">
-<img src="/images/portfolio/databricks-execution-plans/adb-plans-optimized-logical-plan.png" alt="adb-plans-optimized-logical-plan" width="800" align="center"></a> <br><br>
+<!-- <a  href="/images/portfolio/databricks-execution-plans/adb-plans-optimized-logical-plan.png" target="_blank">
+<img src="/images/portfolio/databricks-execution-plans/adb-plans-optimized-logical-plan.png" alt="adb-plans-optimized-logical-plan" width="800" align="center"></a> <br><br> -->
 
 The final section of the explain output is the **`Physical Plan`.** 
 
@@ -115,8 +115,8 @@ Using the optimized logical plan, it has created multiple physical plans, compar
 
 You can now see the cluster operations, the FilesScan with PushFilters, the BroadcastHashJoin and HashAggregate. 
 
-<a  href="/images/portfolio/databricks-execution-plans/adb-plans-physical-plan.png" target="_blank">
-<img src="/images/portfolio/databricks-execution-plans/adb-plans-physical-plan.png" alt="adb-plans-physical-plan" width="800" align="center"></a> <br><br>
+<!-- <a  href="/images/portfolio/databricks-execution-plans/adb-plans-physical-plan.png" target="_blank">
+<img src="/images/portfolio/databricks-execution-plans/adb-plans-physical-plan.png" alt="adb-plans-physical-plan" width="800" align="center"></a> <br><br> -->
 
 #### **Additional Parameters**
 
@@ -145,9 +145,9 @@ By default, this feature is disabled therefore needs to be enabled using the Spa
 #### **Spark UI**
 
 The execution plans can also be view from the Spark UI on SQL tab under the Details section, once the query has been executed.  
-
+<!-- 
 <a  href="/images/portfolio/databricks-execution-plans/adb-plans-spark-ui-details.png" target="_blank">
-<img src="/images/portfolio/databricks-execution-plans/adb-plans-spark-ui-details.png" alt="adb-plans-spark-ui-details" width="400" align="center"></a> <br><br>
+<img src="/images/portfolio/databricks-execution-plans/adb-plans-spark-ui-details.png" alt="adb-plans-spark-ui-details" width="400" align="center"></a> <br><br> -->
 
 ## **Summary**
 
