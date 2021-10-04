@@ -6,6 +6,7 @@ type: blog
 image: images/portfolio/databricks-execution-plans/adb-execution-plans-portfolio.png
 categories: ["Azure", "Databricks"]
 draft: false
-url: "blog/databricks-execution-plans"
+# url: "blog/databricks-execution-plans"
+url: "blog"
 
 ---
