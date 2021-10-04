@@ -3,7 +3,7 @@ title: "Databricks Execution Plans"
 date: 2021-10-04T00:00:00+01:00
 description : "Databricks Execution Plans"
 type: blog
-image: /images/portfolio/databricks-execution-plans/adb-execution-plans-featured.png
+image: images/portfolio/databricks-execution-plans/adb-execution-plans-featured.png
 author: Falek Miah
 tags: ["Azure", "Databricks"]
 draft: false
