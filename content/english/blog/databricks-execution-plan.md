@@ -3,7 +3,7 @@ title: "Databricks Execution Plans"
 date: 2021-10-04T00:00:00+01:00
 description : "Databricks Execution Plans"
 type: blog
-image: images/portfolio/databricks-execution-plans/adb-execution-plans-featured.png
+image: /images/portfolio/databricks-execution-plans/adb-execution-plans-featured.png
 author: Falek Miah
 tags: ["Azure", "Databricks"]
 draft: false
@@ -14,7 +14,7 @@ The execution plans in Databricks allows you to understand how code will actuall
 
 It translates operations into optimized logical and physical plans and shows what operations are going to be executed and sent to the Spark Executors. 
 
-<!-- ## **Execution Flow**
+## **Execution Flow**
 
 Databricks uses Catalyst optimizer, which automatically discovers the most efficient plan to execute the operations specified. 
 
@@ -173,4 +173,4 @@ https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.sql.DataFr
 
 https://docs.microsoft.com/en-us/azure/databricks/spark/latest/spark-sql/language-manual/sql-ref-syntax-qry-explain
 
-https://databricks.com/blog/2020/05/29/adaptive-query-execution-speeding-up-spark-sql-at-runtime.html -->
+https://databricks.com/blog/2020/05/29/adaptive-query-execution-speeding-up-spark-sql-at-runtime.html
