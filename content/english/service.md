@@ -5,12 +5,14 @@ draft: false
 
 service_list:
 # service item loop
+- image : "images/badges/hashicorp-certified-terraform-associate.png"
 - image : "images/badges/databricks-partner-developer-essentials.png"
 - image : "images/badges/databricks-partner-developer-foundations.png"
 - image : "images/badges/databricks-certified-associate-developer-apache-spark-3.0.png"
   # name : "Databricks Certified Associate Developer Apache Spark 3.0"
 - image : "images/badges/azure-solutions-architect-expert.png"
 - image : "images/badges/azure-data-engineer-associate.png"
+- image : "images/badges/azure-fundamentals-600x600.png"
 
 # OLDER CRETS
 - image : "images/badges/MCSA-BI-Reporting-2018.png"
