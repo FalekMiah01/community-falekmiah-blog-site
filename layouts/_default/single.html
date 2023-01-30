@@ -12,7 +12,7 @@
           {{ with .Params.image }}<img src="{{. | absURL}}" alt="image" class="img-fluid w-100 mb-5">{{ end }}
           <div class="about-me-text mb-4">
             <h1>{{.Title | markdownify}}</h1>
-            <small>{{ .PublishDate.Format "January 2, 2006" }}</small>
+            <small>{{ .PublishDate.Format "January 2, 2006" }}</small> <!-- Changed - short date format  -->
           </div>
           <div class="content">{{.Content}}</div>
 

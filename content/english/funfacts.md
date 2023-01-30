@@ -13,12 +13,12 @@ funfacts:
 # funfacts item loop
 - name: 'YEARS OF EXPERIENCE'
   image: 'images/icons/works.png'
-  count: '14'
+  count: '15'
   
 # funfacts item loop
 - name: 'INDUSTRIES WORKED IN'
   image: 'images/icons/industry.png'
-  count: '7'
+  count: '8'
   
 # custom style
 custom_class: "" 
