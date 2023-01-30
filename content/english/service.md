@@ -5,16 +5,23 @@ draft: false
 
 service_list:
 # service item loop
-- image : "images/badges/hashicorp-certified-terraform-associate.png"
+
+# DBX Badges
+- image : "images/badges/databricks-partner-solutions-architect-champion.png"
+- image : "images/badges/databricks-certified-associate-developer-apache-spark-3.0.png"
+- image : "images/badges/databricks-partner-solutions-architect-essentials.png"
 - image : "images/badges/databricks-partner-developer-essentials.png"
 - image : "images/badges/databricks-partner-developer-foundations.png"
-- image : "images/badges/databricks-certified-associate-developer-apache-spark-3.0.png"
-  # name : "Databricks Certified Associate Developer Apache Spark 3.0"
+
+# TF Badges
+- image : "images/badges/hashicorp-certified-terraform-associate.png"
+
+# MS Badges
 - image : "images/badges/azure-solutions-architect-expert.png"
 - image : "images/badges/azure-data-engineer-associate.png"
 - image : "images/badges/azure-fundamentals-600x600.png"
 
-# OLDER CRETS
+# OLDER Badges
 - image : "images/badges/MCSA-BI-Reporting-2018.png"
 - image : "images/badges/MCSE-Data-Management-and-Analytics-2018.png"
 - image : "images/badges/MCSA-SQL-Server-2014.png"

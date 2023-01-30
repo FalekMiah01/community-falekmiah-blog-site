@@ -16,17 +16,17 @@ experience:
   experience_list:
     - name: Principal Consultant
       company: Advancing Analytics
-      duration: 'Current'
+      duration: '(Current)'
       content: Data Professional
 
     - name: Senior BI Developer
-      company: Brit Insurance
-      duration: '2019-2021'
+      company: Brit Insurance 
+      duration: '(2019-2021)'
       content: Data Professional
 
     - name: Senior BI Consultant
       company: Capgemini UK
-      duration: '2017-2020'
+      duration: '(2017-2020)'
       content: Data Professional
 
     - name: Many more...
@@ -81,7 +81,7 @@ custom_css: ""
 
 Principal Consultant at [Advancing Analytics](https://www.advancinganalytics.co.uk/). <br>
 
-Microsoft, Databricks (Spark) and Terraform (HashiCorp) certified consultant with over 14 years’ technical experience. <br>
+A Databricks Champion and Microsoft, Databricks (Spark) and Terraform (HashiCorp) certified consultant with over 15 years’ technical experience. <br>
 
 Specialising in Business Intelligence, Azure Cloud and Power Platform, with extensive experience on delivering end-to-end cloud solutions across a wide range of industries. <br>
 
