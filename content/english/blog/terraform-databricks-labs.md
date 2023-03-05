@@ -174,7 +174,7 @@ Finally, you need to define the backend configuration for where the Terraform st
 
 ## Other Terraform files
 
-You will need to create the `variables.tf` and `output.tf` (optional) files. I will not specify how to create these files but they will be available on **[GitHub](https://github.com/FalekMiah01/Infrastructure-IaC/tree/main/tf-databricks-labs)**.
+You will need to create the `variables.tf` and `output.tf` (optional) files. I will not specify how to create these files but they will be available on **[GitHub](https://github.com/FalekMiah01/Infrastructure-IaC/tree/main/Terraform-Databricks-Labs)**.
 
 ## Create Terraform Variable Definitions (.tfvars) file
 
@@ -303,4 +303,4 @@ The Databricks Labs provider has reduce this approach and made it easier to read
 
 Thanks for reading, I hope you found this post useful and helpful. 
 
-All code files can be found on **[GitHub](https://github.com/FalekMiah01/Infrastructure-IaC/tree/main/tf-databricks-labs)**.  
+All code files can be found on **[GitHub](https://github.com/FalekMiah01/Infrastructure-IaC/tree/main/Terraform-Databricks-Labs)**.  
