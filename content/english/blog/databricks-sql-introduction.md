@@ -9,8 +9,6 @@ tags: ["Azure", "Databricks", "Databricks SQL"]
 draft: false
 ---
 
-<!-- <img src="/images/portfolio/databricks-write-single-json/adb-databricks-single-json.png" alt="adb-databricks-single-json" width="400" align="center"></a> <br><br> -->
-
 Databricks SQL is a powerful tool for querying and analysing data in Databricks Lakehouse. It empowers data analysts and engineers that are familiar with SQL, to extract insights without the need for complex code, thereby streamlining and speeding up the data analysis process. It is useful for collaborating between teams, can share queries, develop basic dashboards, and seamlessly integrates with BI tools such as Power BI, dbt, and Tableau. 
 
 The following are the key concepts of Databricks SQL. 
