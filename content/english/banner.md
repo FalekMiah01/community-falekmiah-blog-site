@@ -9,11 +9,11 @@ bg_image : 'images/banner.jpg'
 
 # animated text loop
 occupations:
-  - 'I AM A FATHER'
   - 'I AM A CONSULTANT'
-  - 'I AM A DEVELOPER/ DATA ENGINEERING'
+  - 'I AM A DEVELOPER/ DATA ENGINEER'
   - 'I AM A DATA PROFESSIONAL'
   - 'I AM A CLOUD & DEVOPS ENTHUSIAST'
+  - 'I AM A FATHER'
   - 'I AM A FOOTBALL FAN'
   - 'I AM A RUNNER'
 

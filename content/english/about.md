@@ -14,7 +14,7 @@ experience:
   enable: true
   title: 'EXPERIENCE'
   experience_list:
-    - name: Principal Consultant
+    - name: Principal Data Engineering Consultant
       company: Advancing Analytics
       duration: '(Current)'
       content: Data Professional
